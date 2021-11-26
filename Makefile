@@ -8,6 +8,7 @@ down:
 	docker-compose down
 
 install:
+	docker-compose build
 	docker-compose run --rm app yarn install
 
 dev:

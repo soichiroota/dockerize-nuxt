@@ -2,16 +2,6 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  babel: {
-    plugins: [
-      [
-        "@babel/plugin-proposal-decorators",
-        { legacy: true }
-      ],
-      ["@babel/plugin-proposal-class-properties",
-      { loose: true }]
-    ]
-  },
   head: {
     titleTemplate: '%s - dockerize-nuxt',
     title: 'dockerize-nuxt',
@@ -78,5 +68,15 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    babel: {
+      plugins: [
+        [
+          "@babel/plugin-proposal-decorators",
+          { legacy: true }
+        ],
+        ["@babel/plugin-proposal-class-properties",
+          { loose: true }]
+      ]
+    },
   }
 }
